@@ -16,13 +16,11 @@ module.exports = {
             type: 'Point',
             coordinates: [longitude, latitude]
           },
-          $maxDistance: 7000,
+          $maxDistance: 10000,
         },
       },
     });
 
-
-    console.log(techsArray);
 
     return response.json({ devs });
   }
